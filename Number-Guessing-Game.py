@@ -13,16 +13,13 @@ while guesses < 6:
 	print("Take a wild guess!")
 	guess = input()
 	guess = int(guess)
-
 	guesses += 1
 
 	if guess < num:
 		print("Too low! You suck at this...")
-
-	if guess > num:
+	elif guess > num:
 		print("Way too high there, buddy. Get it together!")
-
-	if guess == num:
+	elif guess == num:
 		break
 
 if guess == num:
